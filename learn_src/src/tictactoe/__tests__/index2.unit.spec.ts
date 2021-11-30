@@ -1,5 +1,6 @@
 import { createGame, joinGame } from "../assembly";
 import { VMContext } from "near-sdk-as";
+
 describe("joinGame", () => {
   it("should allow users to join", () => {
     VMContext.setSigner_account_id("Bob.testnet");

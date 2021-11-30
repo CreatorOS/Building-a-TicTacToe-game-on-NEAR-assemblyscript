@@ -1,8 +1,9 @@
 import { createGame, joinGame, play, isGameOver, claimReward } from "../assembly";
-import { VMContext, u128 } from "near-sdk-as";
+import { VMContext } from "near-sdk-as";
 
 describe("TicTacToe tests", () => {
   it("should create a game", () => {
+    VMContext.setSigner_account_id("Bob.testnet");
     const gameId = createGame();
     expect(gameId).toBeTruthy();
   })

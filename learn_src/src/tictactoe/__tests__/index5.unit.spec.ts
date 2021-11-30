@@ -1,5 +1,6 @@
 import { createGame, joinGame, play, claimReward } from "../assembly";
 import { VMContext } from "near-sdk-as";
+
 describe("claimReward", () => {
     it("should reward the winner", () => {
         VMContext.setSigner_account_id("Bob.testnet");

@@ -1,5 +1,6 @@
 import { createGame, joinGame, play, isGameOver } from "../assembly";
 import { VMContext } from "near-sdk-as";
+
 describe("isGameOver", () => {
     it("should know when the game is over", () => {
         VMContext.setSigner_account_id("Bob.testnet");
