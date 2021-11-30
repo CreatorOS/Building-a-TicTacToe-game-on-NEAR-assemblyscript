@@ -8,6 +8,7 @@ describe("TicTacToe tests", () => {
   })
 
   it("should allow users to join", () => {
+    VMContext.setSigner_account_id("Bob.testnet");
     const gameId = createGame();
     VMContext.setSigner_account_id("Alice.testnet");
     const res = joinGame(gameId);
